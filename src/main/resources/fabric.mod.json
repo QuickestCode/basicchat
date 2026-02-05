@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "basicchat",
+  "version": "${version}",
+  "name": "basicchat",
+  "description": "A Basic Luckperms Chat Formatter for Fabric Mods",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "net.quickesthenry.chat.basicchat.Basicchat"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "fabric-permissions-api-v0": "0.6.1",
+    "luckperms": "5.5.*"
+  }
+}
