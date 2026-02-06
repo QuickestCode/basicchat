@@ -15,6 +15,7 @@ import net.quickesthenry.chat.basicchat.commands.ModCommands;
 public class Basicchat implements ModInitializer {
     @Override
     public void onInitialize() {
+        ConfigManager.loadConfiguration();
         ModCommands.registerCommands();
         ChatFormatter.registerChatFormatting();
     }

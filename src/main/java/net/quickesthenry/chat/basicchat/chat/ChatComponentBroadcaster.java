@@ -9,8 +9,8 @@ import org.jetbrains.annotations.NotNull;
 public class ChatComponentBroadcaster {
     public static void broadcast(@NotNull Component component, @NotNull MinecraftServer server) {
         for (ServerPlayerEntity player: server.getPlayerManager().getPlayerList()) {
-            ((Audience) player).sendMessage(component);
+            player.sendMessage(component);
         }
-        ((Audience) server).sendMessage(component);
+        server.sendMessage(component);
     }
 }
