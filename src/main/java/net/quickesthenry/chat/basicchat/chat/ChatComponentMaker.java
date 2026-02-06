@@ -36,10 +36,10 @@ public class ChatComponentMaker {
      */
     public static Component makeComponent(@Nullable String prefix, @Nullable String suffix, @NotNull String playerName, @NotNull ServerPlayerEntity player, @NotNull String playerMessage) throws RequiredMetaDataNulled {
         String messageConfiguration = ConfigManager.getMessageConfiguration();
-        if (messageConfiguration.contains("<PREFIX_REQUIRED>") && prefix == null) {
+        if (messageConfiguration.contains("<prefix_required>") && prefix == null) {
             throw new RequiredMetaDataNulled("Prefix");
         }
-        if (messageConfiguration.contains("<SUFFIX_REQUIRED>") && suffix == null) {
+        if (messageConfiguration.contains("<suffix_required>") && suffix == null) {
             throw new RequiredMetaDataNulled("Suffix");
         }
 

@@ -6,7 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class ConfigManager {
-    private static String messageConfiguration = "<PREFIX_REQUIRED> <USERNAME><SUFFIX_OPTIONAL> <b><dark_gray>>></dark_gray></b> <MESSAGE>";
+    private static String messageConfiguration = "<prefix_required> <username><suffix_optional> <b><dark_gray>>></dark_gray></b> <message>";
 
     public static void loadConfiguration() {
         // Use Fabric's official config directory path

@@ -11,12 +11,12 @@ public class ChatComponentPlaceholderReplacer {
     public static Component makeComponent(Component prefixComponent, Component suffixComponent, Component playerNameComponent, Component messageComponent) {
         String messageConfiguration = ConfigManager.getMessageConfiguration();
         return mm.deserialize(messageConfiguration,
-                Placeholder.component("PREFIX_REQUIRED", prefixComponent),
-                Placeholder.component("PREFIX_OPTIONAL", prefixComponent),
-                Placeholder.component("SUFFIX_REQUIRED", suffixComponent),
-                Placeholder.component("SUFFIX_OPTIONAL", suffixComponent),
-                Placeholder.component("USERNAME", playerNameComponent),
-                Placeholder.component("MESSAGE", messageComponent)
+                Placeholder.component("prefix_required", prefixComponent),
+                Placeholder.component("prefix_optional", prefixComponent),
+                Placeholder.component("suffix_required", suffixComponent),
+                Placeholder.component("suffix_optional", suffixComponent),
+                Placeholder.component("username", playerNameComponent),
+                Placeholder.component("message", messageComponent)
         );
     }
 }
